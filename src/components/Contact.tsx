@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -121,12 +120,13 @@ const Contact = () => {
                 </div>
               </div>
               
-              <style jsx>{`
+              {/* Replace the <style jsx> with a standard <style> tag */}
+              <style dangerouslySetInnerHTML={{ __html: `
                 @keyframes dataLine {
                   0% { transform: translateX(0); }
                   100% { transform: translateX(500%); }
                 }
-              `}</style>
+              `}} />
             </div>
           </div>
           
