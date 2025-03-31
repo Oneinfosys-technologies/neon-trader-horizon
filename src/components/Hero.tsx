@@ -163,12 +163,12 @@ const Hero = () => {
                   
                   {/* Terminal placeholder */}
                   <div className="bg-background/80 rounded border border-secondary/50 p-2 font-mono text-xs text-neon-green overflow-hidden">
-                    <p>> Initializing market scanner...</p>
-                    <p>> Connected to data feeds</p>
-                    <p>> Running AI analysis</p>
-                    <p>> Unusual options activity detected</p>
-                    <p>> Dark pool volume spike in NVDA</p>
-                    <p className="animate-pulse">> _</p>
+                    <p>&gt; Initializing market scanner...</p>
+                    <p>&gt; Connected to data feeds</p>
+                    <p>&gt; Running AI analysis</p>
+                    <p>&gt; Unusual options activity detected</p>
+                    <p>&gt; Dark pool volume spike in NVDA</p>
+                    <p className="animate-pulse">&gt; _</p>
                   </div>
                 </div>
               </div>
@@ -185,3 +185,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

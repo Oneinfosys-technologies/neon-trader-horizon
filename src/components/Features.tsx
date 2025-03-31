@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Robot, Activity, Gauge, BarChart } from 'lucide-react';
+import { Bot, Activity, Gauge, BarChart } from 'lucide-react';
 
 const Features = () => {
   return (
@@ -23,7 +23,7 @@ const Features = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <FeatureCard 
-            icon={<Robot className="w-10 h-10 text-neon-blue" />}
+            icon={<Bot className="w-10 h-10 text-neon-blue" />}
             title="AI-Powered Market Pulse"
             description="Our advanced AI algorithms analyze patterns across multiple timeframes, providing you with real-time signals and alerts when significant market movements are detected."
             color="blue"
@@ -258,3 +258,4 @@ const FeatureCard = ({
 };
 
 export default Features;
+
