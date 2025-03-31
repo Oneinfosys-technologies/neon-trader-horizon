@@ -1,8 +1,13 @@
-# Welcome to your Lovable project
+
+# Welcome to Cook.fund
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/69904734-f17c-4338-97b2-dfe7ea771e7f
+
+## Documentation
+
+For detailed installation instructions, including how to deploy on a CyberPanel server, and a comprehensive explanation of the project structure, please refer to our [DOCUMENTATION.md](./DOCUMENTATION.md) file.
 
 ## How can I edit this code?
 
@@ -52,7 +57,7 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -63,6 +68,8 @@ This project is built with .
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/69904734-f17c-4338-97b2-dfe7ea771e7f) and click on Share -> Publish.
+
+For a detailed guide on deploying to a CyberPanel server, see our [DOCUMENTATION.md](./DOCUMENTATION.md) file.
 
 ## I want to use a custom domain - is that possible?
 
