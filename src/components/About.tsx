@@ -2,30 +2,6 @@
 import React from 'react';
 import { Shield, Code, Zap, Users } from 'lucide-react';
 
-type TeamMember = {
-  name: string;
-  position: string;
-  photo: string;
-};
-
-const team: TeamMember[] = [
-  {
-    name: "Alex Morgan",
-    position: "Chief AI Engineer",
-    photo: "https://source.unsplash.com/300x300/?portrait,man,tech"
-  },
-  {
-    name: "Sarah Chen",
-    position: "Quantitative Analyst",
-    photo: "https://source.unsplash.com/300x300/?portrait,woman,professional"
-  },
-  {
-    name: "James Wilson",
-    position: "CTO & Co-Founder",
-    photo: "https://source.unsplash.com/300x300/?portrait,man,developer"
-  }
-];
-
 const About = () => {
   return (
     <section id="about" className="py-24 relative">
@@ -68,50 +44,6 @@ const About = () => {
         </div>
         
         <div className="glowing-divider" style={{ '--glow-color': '#8B5CF6' } as React.CSSProperties}></div>
-        
-        <div className="mt-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
-            Meet Our Team of Market Experts
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {team.map((member, idx) => (
-              <div key={idx} className="group">
-                <div 
-                  className="relative overflow-hidden rounded-lg card-cyberpunk p-1 transition-all duration-300 transform group-hover:-translate-y-2"
-                  style={{ '--glow-color': '#00BFFF' } as React.CSSProperties}
-                >
-                  <div className="aspect-square overflow-hidden rounded-lg">
-                    <img 
-                      src={member.photo} 
-                      alt={member.name} 
-                      className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                    />
-                    {/* Overlay with gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-70"></div>
-                  </div>
-                  
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h4 className="text-xl font-bold">{member.name}</h4>
-                    <p className="text-sm text-neon-blue">{member.position}</p>
-                  </div>
-                  
-                  {/* Animated border */}
-                  <div className="absolute inset-0 border-2 border-neon-blue/30 rounded-lg pointer-events-none">
-                    <div className="absolute top-0 left-0 w-1/4 h-0.5 bg-neon-blue animate-pulse-neon" 
-                      style={{ '--glow-color': '#00BFFF' } as React.CSSProperties}></div>
-                    <div className="absolute top-0 right-0 w-0.5 h-1/4 bg-neon-blue animate-pulse-neon"
-                      style={{ '--glow-color': '#00BFFF', animationDelay: '0.25s' } as React.CSSProperties}></div>
-                    <div className="absolute bottom-0 right-0 w-1/4 h-0.5 bg-neon-blue animate-pulse-neon"
-                      style={{ '--glow-color': '#00BFFF', animationDelay: '0.5s' } as React.CSSProperties}></div>
-                    <div className="absolute bottom-0 left-0 w-0.5 h-1/4 bg-neon-blue animate-pulse-neon"
-                      style={{ '--glow-color': '#00BFFF', animationDelay: '0.75s' } as React.CSSProperties}></div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
         
         <div className="my-24">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-10">

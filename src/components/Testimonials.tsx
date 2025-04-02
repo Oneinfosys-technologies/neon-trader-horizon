@@ -194,14 +194,14 @@ const StatsItem = ({
   return (
     <div className="grid grid-cols-[100px_1fr] items-center gap-6">
       <div 
-        className="card-cyberpunk aspect-square flex items-center justify-center rounded-lg border border-neon-blue"
+        className="aspect-square flex items-center justify-center rounded-lg border border-neon-blue"
         style={{ '--glow-color': 'rgba(0, 191, 255, 0.3)' } as React.CSSProperties}
       >
-        <span className="text-3xl font-bold text-neon-blue">{value}</span>
+        <span className="text-2xl font-bold text-neon-blue">{value}</span>
       </div>
       <div>
-        <h3 className="text-xl font-bold">{label}</h3>
-        <p className="text-muted-foreground">{description}</p>
+        <h3 className="text-lg font-bold">{label}</h3>
+        <p className="text-sm text-muted-foreground">{description}</p>
       </div>
     </div>
   );

@@ -19,3 +19,8 @@ body, html {
   0% { transform: translateX(0); }
   100% { transform: translateX(500%); }
 }
+
+/* Stat box styling */
+.aspect-square {
+  aspect-ratio: 1/1;
+}
