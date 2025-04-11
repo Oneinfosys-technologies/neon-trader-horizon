@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -18,14 +17,11 @@ const Header = () => {
           to="/" 
           className="flex items-center"
         >
-          <span 
-            className="text-2xl font-bold tracking-tight text-gradient bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink"
-            style={{
-              '--glow-color': 'rgba(139, 92, 246, 0.5)',
-            } as React.CSSProperties}
-          >
-            Cook.fund
-          </span>
+          <img 
+            src="/lovable-uploads/cabc1a95-6957-4551-89dd-5a1f7950723b.png" 
+            alt="Cook.fund Logo" 
+            className="h-10" 
+          />
         </Link>
 
         {/* Desktop Navigation */}
