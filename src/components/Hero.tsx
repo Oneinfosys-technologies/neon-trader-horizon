@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, BarChart, Activity, DollarSign } from 'lucide-react';
@@ -93,16 +94,17 @@ const Hero = () => {
               Cook.fund provides institutional-level analytics, AI-powered alerts, and next-gen tools for the retail trader. Navigate markets with precision.
             </p>
             
-            <div className="flex flex-row gap-4 mt-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Button 
-                className="bg-neon-blue hover:opacity-90 transition-all py-2 px-6 rounded-md text-white flex items-center"
+                className="bg-gradient-to-r from-neon-blue to-neon-purple hover:opacity-90 transition-all py-6 px-8 text-lg"
               >
                 Start Free Trial
                 <ArrowRight className="ml-2" size={18} />
               </Button>
               <Button 
                 variant="outline" 
-                className="bg-neon-purple border-none text-white hover:opacity-90 transition-all py-2 px-6 rounded-md"
+                className="border-neon-blue hover:border-neon-purple text-neon-blue hover:text-neon-purple transition-colors py-6 px-8 text-lg neon-border"
+                style={{ '--glow-color': '#00BFFF' } as React.CSSProperties}
               >
                 See Live Demo
               </Button>
@@ -183,3 +185,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
