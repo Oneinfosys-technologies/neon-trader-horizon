@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -34,13 +35,12 @@ const Header = () => {
         <div className="hidden md:flex items-center space-x-4">
           <Button 
             variant="outline" 
-            className="border-neon-blue hover:border-neon-purple text-neon-blue hover:text-neon-purple transition-colors neon-border"
-            style={{ '--glow-color': '#00BFFF' } as React.CSSProperties}
+            className="border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-white transition-colors"
           >
             Login
           </Button>
           <Button 
-            className="bg-gradient-to-r from-neon-blue to-neon-purple hover:opacity-90 transition-opacity"
+            className="bg-neon-blue text-white hover:opacity-90 transition-opacity"
           >
             Start Free Trial
           </Button>
@@ -67,7 +67,7 @@ const Header = () => {
                   Login
                 </Button>
                 <Button 
-                  className="bg-gradient-to-r from-neon-blue to-neon-purple w-full"
+                  className="bg-neon-blue text-white w-full"
                 >
                   Start Free Trial
                 </Button>
